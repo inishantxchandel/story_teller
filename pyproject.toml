@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "story-teller-api"
+version = "0.1.0"
+description = ""
+authors = ["inishantxchandel <nishantxchandel@gmail.com>"]
+readme = "README.md"
+packages = [{include = "story_teller_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.100.0"
+uvicorn = "^0.23.1"
+sqlalchemy = "^2.0.19"
+passlib = "^1.7.4"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+python-dotenv = "^1.0.0"
+openai = "^0.27.8"
+pydantic-settings = "^2.0.2"
+psycopg2-binary = "^2.9.6"
+pydantic = {extras = ["email"], version = "^2.0.3"}
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
